@@ -1,0 +1,30 @@
+2025-05-25 16:21:22,569 - INFO - 数据加载成功
+2025-05-25 16:21:22,588 - ERROR - 系统异常: 'list' object has no attribute 'tolist'
+Traceback (most recent call last):
+  File "D:\pythonProject16\main.py", line 310, in main
+    factory.train_all(X_train, y_train)
+  File "D:\pythonProject16\main.py", line 239, in train_all
+    X_processed = self.preprocessor.fit_transform(X_train)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonProject16\main.py", line 175, in fit_transform
+    self.feature_names = self._get_feature_names()
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonProject16\main.py", line 185, in _get_feature_names
+    return num_features + cat_features.tolist()
+                          ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'tolist'
+2025-05-25 16:25:50,251 - INFO - 数据加载成功
+2025-05-25 16:25:50,270 - ERROR - 系统异常: 'SafeOneHotEncoder' object has no attribute 'get_feature_names'
+Traceback (most recent call last):
+  File "D:\pythonProject16\main.py", line 334, in main
+    factory.train_all(X_train, y_train)
+  File "D:\pythonProject16\main.py", line 263, in train_all
+    X_processed = self.preprocessor.fit_transform(X_train)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonProject16\main.py", line 175, in fit_transform
+    self.feature_names = self._get_feature_names()
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\pythonProject16\main.py", line 184, in _get_feature_names
+    'onehot'].get_feature_names(['ocean_proximity'])
+              ^^^^^^^^^^^^^^^^^
+AttributeError: 'SafeOneHotEncoder' object has no attribute 'get_feature_names'. Did you mean: '_get_feature_names'?

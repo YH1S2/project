@@ -1,0 +1,40 @@
+2025-05-25 15:57:13,116 - INFO - 开始加载数据
+2025-05-25 15:58:22,427 - INFO - 开始加载数据
+2025-05-25 15:58:27,940 - INFO - 开始加载数据
+2025-05-25 16:00:39,083 - INFO - 开始加载数据
+2025-05-25 16:00:49,455 - INFO - 原始数据维度：(20640, 10)
+2025-05-25 16:10:30,114 - INFO - 开始加载数据
+2025-05-25 16:10:36,188 - INFO - 清洗后数据维度：(19648, 10)
+2025-05-25 16:14:37,000 - INFO - 开始加载数据
+2025-05-25 16:14:39,253 - INFO - 清洗后数据维度：(19648, 10)
+2025-05-25 16:31:38,561 - WARNING - 检测到极端高房价，将进行截断处理
+2025-05-25 16:31:38,563 - INFO - 数据加载成功
+2025-05-25 16:31:38,581 - ERROR - 系统错误: 'list' object has no attribute 'tolist'
+Traceback (most recent call last):
+  File "D:\pythonProject16\main.py", line 231, in main
+    all_features = num_features + cat_features.tolist()
+                                  ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'tolist'
+2025-05-25 16:38:35,015 - INFO - 数据加载成功，维度：(20640, 10)
+2025-05-25 16:38:35,033 - ERROR - 系统错误：'list' object has no attribute 'tolist'
+Traceback (most recent call last):
+  File "D:\pythonProject16\main.py", line 218, in main
+    all_features = num_features + cat_features.tolist()  # 正确转换为列表
+                                  ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'tolist'
+2025-05-25 16:43:07,326 - INFO - 数据加载成功，维度：(20640, 10)
+2025-05-25 16:43:07,344 - ERROR - 系统错误：'list' object has no attribute 'tolist'
+Traceback (most recent call last):
+  File "D:\pythonProject16\main.py", line 217, in main
+    num_features = engineer.get_feature_names_out()[:-1].tolist()  # 转换为列表
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'tolist'
+2025-05-25 16:46:38,888 - INFO - 数据加载成功，维度：(20640, 10)
+2025-05-25 16:47:08,940 - INFO - 最佳参数：{'max_depth': 10, 'min_samples_split': 2, 'n_estimators': 200}
+2025-05-25 16:48:11,760 - INFO - 模型保存成功
+2025-05-25 16:51:36,509 - INFO - 数据加载成功，维度：(20640, 10)
+2025-05-25 16:52:05,441 - INFO - 最佳参数：{'max_depth': 10, 'min_samples_split': 2, 'n_estimators': 200}
+2025-05-25 16:53:10,165 - INFO - 模型保存成功
+2025-05-27 16:57:58,904 - INFO - 数据加载成功，维度：(20640, 10)
+2025-05-27 16:58:26,308 - INFO - 最佳参数：{'max_depth': 10, 'min_samples_split': 2, 'n_estimators': 200}
+2025-05-27 16:59:24,007 - INFO - 模型保存成功
