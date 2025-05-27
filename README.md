@@ -4,7 +4,7 @@
 
 Run the main script:
 ```bash
-python housing.py
+python main.py
 ```
 
 ​**Expected outputs**:
